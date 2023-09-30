@@ -1,0 +1,121 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+        <title>Exotic Pets</title>
+        <link rel="icon" type="image/x-icon" href="logo.jpg">
+    </head>
+    <body>
+        <header id="main-header">
+            <figure id="brand-logo">
+                <img src="logo.jpg" class="logos">
+            </figure>
+            
+            <div class="icon">
+                <a href="https://www.facebook.com/kenshi.nacional/"><i class="fa fa-facebook-official"></i></a> 
+                <a href="https://www.instagram.com/kenshi_____4/"><i class="fa fa-instagram"></i></a>
+                <a href="https://twitter.com/"><i class="fa fa-twitter"></i></a>
+                </div> 
+                
+            <nav id="main-nav">
+                <a href="#">Home</a>
+                <a href="#trivia">Trivia</a>
+                <a href="#about">About</a>
+
+            </nav>
+            
+            <div class="menu-btn">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </header>
+        <nav id="mobile-nav">
+            <a href="#">Home</a>
+            <a href="#trivia">Trivia</a>
+            <a href="#about">About</a>
+            
+        </nav>
+        <section id="hero">
+            <h1 id="title" class="exo">
+                <span>E</span>
+                <span>x</span>
+                <span>o</span>
+                <span>t</span>
+                <span>i</span>
+                <span>c</span>
+
+                <span>P</span>
+                <span>e</span>
+                <span>t</span>
+                <span>s</span>
+            </h1>
+            <video src="frog_-_107079 (Original).mp4" muted loop autoplay></video>
+        </section> 
+        <main id="exotic-pets-collection">
+            <article>
+                <figure>
+                    <h4>Bearded Dragon</h4>
+                    <a href="pets_collection.html"><video src="Bearded Dragon.mp4" muted loop autoplay></video></a>
+                </figure>
+                <section>
+                    <p>The bearded dragon lives up to its name: Like a dragon, it’s equipped with armor of spiny reptilian scales, which include a “beard” of spikes under its chin that puffs up depending on its mood. There are eight species species of bearded dragons recognized today, all of which are affectionately called “beardies.”
+
+                        Among the most popular pet reptiles, bearded dragons tend to be gentle, inquisitive, and active during the day. The central bearded dragon, Pogona vitticeps, is the most common species to have as a pet.</p>
+                </section>
+            </article>
+            <article>
+                <figure>
+                    <h4>Scorpion</h4>
+                    <a href="pets_collection2.html"><video src="Scorpion.mp4" muted loop autoplay></video></a>
+                </figure>
+                <section>
+                    <p>Scorpions are predatory arachnids of the order Scorpiones. They have eight legs, and are easily recognized by a pair of grasping pincers and a narrow, segmented tail, often carried in a characteristic forward curve over the back and always ending with a stinger. The evolutionary history of scorpions goes back 435 million years. They mainly live in deserts but have adapted to a wide range of environmental conditions, and can be found on all continents except Antarctica. There are over 2,500 described species, with 22 extant (living) families recognized to date. Their taxonomy is being revised to account for 21st-century genomic studies.</p>
+                </section>
+            </article>
+            <article>
+                <figure>
+                    <h4>Tarantula</h4>
+                    <a href="pets_collection4.html"><video src="Tarantula.mp4" muted loop autoplay></video></a>
+                </figure>
+                <section>
+                    <p>Tarantulas give people the creeps because they have large, hairy bodies and legs. While these large spiders can take a painful bite out of a human, a tarantula's venom has a low toxicity to people.Tarantulas move slowly on their eight hairy legs, but they are accomplished nocturnal predators. Insects are their main prey, but they also target bigger game, including frogs, toads, and mice. Tarantulas are burrowers and typically live in the ground.</p>
+                </section>
+            </article>
+            <article>
+                <figure>
+                    <h4>Centipede</h4>
+                    <a href="pets_collection3.html"><video src="Centipede.mp4" muted loop autoplay></video></a>
+                </figure>
+                <section>
+                    <p>Centipedes (from Neo-Latin centi-, "hundred", and Latin pes, pedis, "foot") are predatory arthropods belonging to the class Chilopoda (Ancient Greek χεῖλος, kheilos, lip, and Neo-Latin suffix -poda, "foot", describing the forcipules) of the subphylum Myriapoda, an arthropod group which includes millipedes and other multi-legged animals. Centipedes are elongated segmented (metameric) creatures with one pair of legs per body segment. All centipedes are venomous and can inflict painful stings, injecting their venom through pincer-like appendages known as forcipules, which are actually modified legs instead of fangs. Despite the name, no centipede has exactly 100 pairs of legs; number of legs ranges from 15 pairs to 191 pairs, always an odd number.</p>
+                </section>
+            </article>
+        
+        </main> 
+
+        <section id="trivia">
+            <h2>Trivia</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum dolore consequuntur autem maiores tempora earum possimus voluptatem atque tempore expedita! Eligendi itaque blanditiis quo saepe fugiat mollitia ipsum quam! Facilis.</p>
+        </section>
+        <br>
+        <br>
+
+        <section id="about">
+            <h2 >About us</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, incidunt impedit. Quae exercitationem nihil fugit, ratione, repellendus incidunt deserunt corporis nostrum esse adipisci natus laboriosam harum ex aut rem provident.</p>
+        </section>
+
+        <script>
+            document.querySelector(".menu-btn").addEventListener("click", function () {
+                document.querySelector("#mobile-nav").classList.toggle("active");
+            });
+            window.addEventListener('resize', () => {
+                document.querySelector("#mobile-nav").classList.remove("active");
+            })
+        </script>
+    </body>
+    </html>         

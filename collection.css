@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Prism&display=swap');
+
+#exotic-pets-collection-showcase {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 300px;
+    padding: 2rem;
+    gap: 2rem;
+}
+#exotic-pets-collection-showcase article {
+    position: relative;
+    overflow: hidden;
+}
+#exotic-pets-collection-showcase article figure {
+    width: 100%;
+    height: 100%; 
+    text-align: center; 
+    font-family:'Tilt Prism';
+}
+
+#exotic-pets-collection-showcase article figure img {
+    object-fit: fill;
+}
+.icon .fa {
+    color: rgb(5, 172, 24);
+    margin: 0 13px;
+    cursor: pointer;
+    padding: 0px 6.625px;
+}
+
+
+#exotic-pets-collection-showcase article section{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    /* background-color: rgba(0, 0, 0, 0.1); */
+    translate: 0 100%;
+
+    transition: 300ms ease-in-out;
+}
+#exotic-pets-collection-showcase article:hover section{
+    translate: 0 0;
+}
+/* *pagedit ng lettter */
+#exotic-pets-collection-showcase article section p {
+    color: rgb(17, 18, 18);
+    font-weight: 700;
+    text-shadow: 0 0 2px white;
+
+}

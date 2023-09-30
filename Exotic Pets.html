@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<!-- saved from url=(0033)http://127.0.0.1:5500/index.html# -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Exotic Pets</title>
+<link rel="stylesheet" href="./Exotic Pets_files/style.css"></head>
+<body>
+    <header id="main-header">
+        <figure id="brand-logo">
+            <img src="./Exotic Pets_files/logo.jpg" class="logos">
+        </figure>
+        <nav id="main-nav">
+            <a href="http://127.0.0.1:5500/index.html#">Home</a>
+            <a href="http://127.0.0.1:5500/index.html#trivia">Trivia</a>
+            <a href="http://127.0.0.1:5500/index.html#about">About</a>
+
+        </nav>
+        
+        <div class="menu-btn">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </header>
+    <nav id="mobile-nav" class="">
+        <a href="http://127.0.0.1:5500/index.html#">Home</a>
+        <a href="http://127.0.0.1:5500/index.html#trivia">Trivia</a>
+        <a href="http://127.0.0.1:5500/index.html#about">About</a>
+        
+    </nav>
+    <section id="hero">
+        <h1 id="title" class="exo">Exotic Pets</h1>
+        <video src="frog_-_107079 (Original).mp4" muted="" loop="" autoplay=""></video> 
+    </section> 
+    <main id="exotic-pets-collection">
+        <article>
+            <figure>
+                <h4>Bearded Dragon</h4>
+                <video src="Bearded Dragon.mp4" muted="" loop="" autoplay=""></video>
+            </figure>
+            <section>
+                <p>The bearded dragon lives up to its name: Like a dragon, it’s equipped with armor of spiny reptilian scales, which include a “beard” of spikes under its chin that puffs up depending on its mood. There are eight species species of bearded dragons recognized today, all of which are affectionately called “beardies.”</p>
+            </section>
+        </article>
+        <article>
+            <figure>
+                <h4>Scorpion</h4>
+                <video src="Scorpion.mp4" muted="" loop="" autoplay=""></video>
+            </figure>
+            <section>
+                <p>Scorpions are arachnids and have eight legs like their cousins—spiders, mites, and ticks. They can quickly grab an insect with their pincers and whip their telson, the poisonous tip of their tail forward and sting their prey. They use their poison to kill prey and to defend against predators.</p>
+            </section>
+        </article>
+        <article>
+            <figure>
+                <h4>Tarantula</h4>
+                <video src="Tarantula.mp4" muted="" loop="" autoplay=""></video>
+            </figure>
+            <section>
+                <p>Tarantulas give people the creeps because they have large, hairy bodies and legs. While these large spiders can take a painful bite out of a human, a tarantula's venom has a low toxicity to people.Tarantulas move slowly on their eight hairy legs, but they are accomplished nocturnal predators. Insects are their main prey, but they also target bigger game, including frogs, toads, and mice. Tarantulas are burrowers and typically live in the ground.</p>
+            </section>
+        </article>
+        <article>
+            <figure>
+                <h4>Centipede</h4>
+                <video src="Centipede.mp4" muted="" loop="" autoplay=""></video>
+            </figure>
+            <section>
+                <p>Centipedes (from Neo-Latin centi-, "hundred", and Latin pes, pedis, "foot") are predatory arthropods belonging to the class Chilopoda (Ancient Greek χεῖλος, kheilos, lip, and Neo-Latin suffix -poda, "foot", describing the forcipules) of the subphylum Myriapoda, an arthropod group which includes millipedes and other multi-legged animals. Centipedes are elongated segmented (metameric) creatures with one pair of legs per body segment. All centipedes are venomous and can inflict painful stings, injecting their venom through pincer-like appendages known as forcipules, which are actually modified legs instead of fangs. Despite the name, no centipede has exactly 100 pairs of legs; number of legs ranges from 15 pairs to 191 pairs, always an odd number.</p>
+            </section>
+        </article>
+    
+    </main> 
+    <br>
+    <br>
+
+    <div id="trivia">
+        <h2 class="trivia">Trivia</h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum dolore consequuntur autem maiores tempora earum possimus voluptatem atque tempore expedita! Eligendi itaque blanditiis quo saepe fugiat mollitia ipsum quam! Facilis.</p>
+    </div>
+    <br>
+    <br>
+
+    <div id="about">
+        <h3 class="aboutus">About us</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, incidunt impedit. Quae exercitationem nihil fugit, ratione, repellendus incidunt deserunt corporis nostrum esse adipisci natus laboriosam harum ex aut rem provident.</p>
+    </div>
+
+
+    <script>
+        document.querySelector(".menu-btn").addEventListener("click", function () {
+            document.querySelector("#mobile-nav").classList.toggle("active");
+        });
+    </script>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+         
+</body></html>
